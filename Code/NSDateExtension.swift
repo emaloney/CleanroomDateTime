@@ -15,45 +15,45 @@ public extension NSDate
 {
     /** The `year` component of the date represented by the receiver. */
     public var year: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitYear, fromDate: self).year
+        return NSCalendar.currentCalendar().components(.Year, fromDate: self).year
     }
 
     /** The `month` component of the date represented by the receiver. */
     public var month: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitMonth, fromDate: self).month
+        return NSCalendar.currentCalendar().components(.Month, fromDate: self).month
     }
 
     /** The `day` (of the month) component of the date represented by the
     receiver. */
     public var day: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitDay, fromDate: self).day
+        return NSCalendar.currentCalendar().components(.Day, fromDate: self).day
     }
 
     /** The `hour` component of the date represented by the receiver. */
     public var hour: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitHour, fromDate: self).hour
+        return NSCalendar.currentCalendar().components(.Hour, fromDate: self).hour
     }
 
     /** The `minute` component of the date represented by the receiver. */
     public var minute: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitMinute, fromDate: self).minute
+        return NSCalendar.currentCalendar().components(.Minute, fromDate: self).minute
     }
 
     /** The `second` component of the date represented by the receiver. */
     public var second: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitSecond, fromDate: self).second
+        return NSCalendar.currentCalendar().components(.Second, fromDate: self).second
     }
 
     /** The `nanosecond` component of the date represented by the receiver. */
     public var nanosecond: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitNanosecond, fromDate: self).nanosecond
+        return NSCalendar.currentCalendar().components(.Nanosecond, fromDate: self).nanosecond
     }
 
     /** The `weekday` component of the date represented by the receiver. This
     is a value between 1 and *n* (inclusive). In the Gregorian calendar, 1 
     represents Sunday, while *n* is 7, representing Saturday. */
     public var weekday: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitWeekday, fromDate: self).weekday
+        return NSCalendar.currentCalendar().components(.Weekday, fromDate: self).weekday
     }
 
     /** The `weekdayOrdinal` component of the date represented by the receiver.
@@ -61,23 +61,23 @@ public extension NSDate
     current `month`. In the Gregorian calendar, a `weekdayOrdinal` unit of 3
     for a `weekday` of 4 represents "the third Wednesday in the month." */
     public var weekdayOrdinal: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitWeekdayOrdinal, fromDate: self).weekdayOrdinal
+        return NSCalendar.currentCalendar().components(.WeekdayOrdinal, fromDate: self).weekdayOrdinal
     }
 
     /** The `weekOfMonth` component of the date represented by the receiver. */
     public var weekOfMonth: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitWeekOfMonth, fromDate: self).weekOfMonth
+        return NSCalendar.currentCalendar().components(.WeekOfMonth, fromDate: self).weekOfMonth
     }
 
     /** The `weekOfYear` component of the date represented by the receiver. */
     public var weekOfYear: Int {
-        return NSCalendar.currentCalendar().components(.CalendarUnitWeekOfYear, fromDate: self).weekOfYear
+        return NSCalendar.currentCalendar().components(.WeekOfYear, fromDate: self).weekOfYear
     }
 
     /** The `timeZone` component of the date represented by the receiver, or
     `nil` if it could not be determined. */
     public var timeZone: NSTimeZone? {
-        return NSCalendar.currentCalendar().components(.CalendarUnitTimeZone, fromDate: self).timeZone
+        return NSCalendar.currentCalendar().components(.TimeZone, fromDate: self).timeZone
     }
 
     /**
@@ -98,7 +98,7 @@ public extension NSDate
         -> NSDate
     {
         let calendar = NSCalendar.currentCalendar()
-        let dayStart = calendar.components(.CalendarUnitDay | .CalendarUnitMonth | .CalendarUnitYear | .CalendarUnitTimeZone, fromDate: self)
+        let dayStart = calendar.components([.Day, .Month, .Year, .TimeZone], fromDate: self)
         dayStart.hour = hour
         dayStart.minute = minute
         dayStart.second = second
@@ -292,7 +292,7 @@ public extension NSDate
     public func adjustDay(days: Int)
         -> NSDate
     {
-        return NSCalendar.currentCalendar().dateByAddingUnit(.CalendarUnitDay, value: days, toDate: self, options: nil)!
+        return NSCalendar.currentCalendar().dateByAddingUnit(.Day, value: days, toDate: self, options: .WrapComponents)!
     }
 
     /**
