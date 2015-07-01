@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B92C6251B27693100555D7C"
+               BlueprintIdentifier = "3B0168381B44850900E330CA"
                BuildableName = "CleanroomDateTime.framework"
-               BlueprintName = "CleanroomDateTime"
-               ReferencedContainer = "container:CleanroomDateTime.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B92C6301B27693100555D7C"
-               BuildableName = "CleanroomDateTimeTests.xctest"
-               BlueprintName = "CleanroomDateTimeTests"
+               BlueprintName = "CleanroomDateTime OSX"
                ReferencedContainer = "container:CleanroomDateTime.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B92C6251B27693100555D7C"
+            BlueprintIdentifier = "3B0168381B44850900E330CA"
             BuildableName = "CleanroomDateTime.framework"
-            BlueprintName = "CleanroomDateTime"
+            BlueprintName = "CleanroomDateTime OSX"
             ReferencedContainer = "container:CleanroomDateTime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B92C6251B27693100555D7C"
+            BlueprintIdentifier = "3B0168381B44850900E330CA"
             BuildableName = "CleanroomDateTime.framework"
-            BlueprintName = "CleanroomDateTime"
+            BlueprintName = "CleanroomDateTime OSX"
             ReferencedContainer = "container:CleanroomDateTime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B92C6251B27693100555D7C"
+            BlueprintIdentifier = "3B0168381B44850900E330CA"
             BuildableName = "CleanroomDateTime.framework"
-            BlueprintName = "CleanroomDateTime"
+            BlueprintName = "CleanroomDateTime OSX"
             ReferencedContainer = "container:CleanroomDateTime.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
