@@ -3,7 +3,7 @@
 //  CleanroomDateTimeTests
 //
 //  Created by Evan Maloney on 6/9/15.
-//  Copyright (c) 2015 Gilt Groupe. All rights reserved.
+//  Copyright © 2015 Gilt Groupe. All rights reserved.
 //
 
 import UIKit

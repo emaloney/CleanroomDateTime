@@ -1,9 +1,9 @@
 //
-//  NSDateExtension.swift
+//  NSDateFieldExtraction.swift
 //  Cleanroom Project
 //
 //  Created by Evan Maloney on 5/14/15.
-//  Copyright (c) 2015 Gilt Groupe. All rights reserved.
+//  Copyright © 2015 Gilt Groupe. All rights reserved.
 //
 
 import Foundation
@@ -181,7 +181,7 @@ public extension NSDate
         -> Bool
     {
         let yest = NSDate.yesterday()
-        return self.isBetween(yest.startOfDay(), and: yest.endOfDay())
+        return isBetween(yest.startOfDay(), and: yest.endOfDay())
     }
 
     /**
@@ -194,7 +194,7 @@ public extension NSDate
         -> Bool
     {
         let now = NSDate()
-        return self.isBetween(now.startOfDay(), and: now.endOfDay())
+        return isBetween(now.startOfDay(), and: now.endOfDay())
     }
 
     /**
@@ -207,7 +207,7 @@ public extension NSDate
         -> Bool
     {
         let yest = NSDate.tomorrow()
-        return self.isBetween(yest.startOfDay(), and: yest.endOfDay())
+        return isBetween(yest.startOfDay(), and: yest.endOfDay())
     }
 
     /**
@@ -220,7 +220,7 @@ public extension NSDate
         -> Bool
     {
         let startOfToday = NSDate().startOfDay()
-        return self.earlierDate(startOfToday) == self
+        return earlierDate(startOfToday) == self
     }
 
     /**
@@ -233,7 +233,7 @@ public extension NSDate
         -> Bool
     {
         let endOfToday = NSDate().endOfDay()
-        return self.laterDate(endOfToday) == self
+        return laterDate(endOfToday) == self
     }
 
     /**
@@ -257,7 +257,7 @@ public extension NSDate
         let laterDate = time1.laterDate(time2)
 
         return (self.isEqualToDate(earlierDate) || self.earlierDate(earlierDate) == earlierDate)
-            && (self.isEqualToDate(laterDate) || self.laterDate(laterDate) == laterDate)
+            && (self.isEqualToDate(laterDate)   || self.laterDate(laterDate) == laterDate)
     }
 
     /**
@@ -331,6 +331,6 @@ public extension NSDate
     public func isSameDayAs(date: NSDate)
         -> Bool
     {
-        return self.isBetween(date.startOfDay(), and: date.endOfDay())
+        return isBetween(date.startOfDay(), and: date.endOfDay())
     }
 }
