@@ -1,5 +1,5 @@
 //
-//  NSDateFormatting.swift
+//  NSDate-Formatting.swift
 //  Cleanroom Project
 //
 //  Created by Evan Maloney on 8/14/15.
@@ -64,13 +64,37 @@ extension NSDate
         return formatDateTimeWithStyle(style, timeZone: NSTimeZone(abbreviation: "UTC")!)
     }
 
-    public func formatDateTimeAsISO8601 ()
-      -> String
+    public func asStringWithDateFormat(format: DateFormat, inTimeZone timeZone: NSTimeZone)
+        -> String
     {
         let formatter = NSDateFormatter()
-        formatter.locale = NSLocale(localeIdentifier: "en_US")
-        formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
-        formatter.dateFormat = DateFormat.ISO8601.rawValue
+        formatter.locale = NSLocale(localeIdentifier: NSLocale.currentLocale().localeIdentifier)
+        formatter.timeZone = timeZone
+        formatter.dateFormat = format.rawValue
         return formatter.stringFromDate(self)
+    }
+
+    public func asStringWithDateFormat(format: DateFormat, inLocalTime: Bool = false)
+        -> String
+    {
+        let timeZone: NSTimeZone
+        if inLocalTime {
+            timeZone = NSTimeZone.localTimeZone()
+        } else {
+            timeZone = NSTimeZone(forSecondsFromGMT: 0)
+        }
+        return asStringWithDateFormat(format, inTimeZone: timeZone)
+    }
+
+    public func asISO8601(inLocalTime: Bool = false)
+      -> String
+    {
+        return asStringWithDateFormat(.ISO8601, inLocalTime: inLocalTime)
+    }
+
+    public func asRFC1123(inLocalTime: Bool = false)
+        -> String
+    {
+        return asStringWithDateFormat(.RFC1123, inLocalTime: inLocalTime)
     }
 }

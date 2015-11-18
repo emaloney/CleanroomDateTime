@@ -22,7 +22,7 @@ extension String
 
     public func asDateISO8601() -> NSDate? {
       let formatter = NSDateFormatter()
-      formatter.locale = NSLocale(localeIdentifier: "en_US")
+      formatter.locale = NSLocale(localeIdentifier: NSLocale.currentLocale().localeIdentifier)
       formatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
       formatter.dateFormat = DateFormat.ISO8601.rawValue
       return formatter.dateFromString(self)
