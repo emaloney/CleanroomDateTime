@@ -6,7 +6,6 @@
 //  Copyright © 2015 Gilt Groupe. All rights reserved.
 //
 
-import UIKit
 import XCTest
 
 class CleanroomDateTimeTests: XCTestCase {
