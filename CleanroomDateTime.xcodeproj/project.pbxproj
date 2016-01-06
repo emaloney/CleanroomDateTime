@@ -10,41 +10,41 @@
 		3B00E5681BA3782D0011486D /* CleanroomDateTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E55D1BA3782D0011486D /* CleanroomDateTime.framework */; };
 		3B00E5861BA379830011486D /* CleanroomDateTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E57C1BA379830011486D /* CleanroomDateTime.framework */; };
 		3B00E5A41BA37A420011486D /* CleanroomDateTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B00E59A1BA37A420011486D /* CleanroomDateTime.framework */; };
-		3B26C2821BFD2F170026F0A6 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27A1BFD2F170026F0A6 /* DateFormat.swift */; };
-		3B26C2831BFD2F170026F0A6 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27A1BFD2F170026F0A6 /* DateFormat.swift */; };
-		3B26C2841BFD2F170026F0A6 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27A1BFD2F170026F0A6 /* DateFormat.swift */; };
-		3B26C2851BFD2F170026F0A6 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27A1BFD2F170026F0A6 /* DateFormat.swift */; };
-		3B26C2861BFD2F170026F0A6 /* DateParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27B1BFD2F170026F0A6 /* DateParsing.swift */; };
-		3B26C2871BFD2F170026F0A6 /* DateParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27B1BFD2F170026F0A6 /* DateParsing.swift */; };
-		3B26C2881BFD2F170026F0A6 /* DateParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27B1BFD2F170026F0A6 /* DateParsing.swift */; };
-		3B26C2891BFD2F170026F0A6 /* DateParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27B1BFD2F170026F0A6 /* DateParsing.swift */; };
-		3B26C28A1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27C1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift */; };
-		3B26C28B1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27C1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift */; };
-		3B26C28C1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27C1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift */; };
-		3B26C28D1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27C1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift */; };
-		3B26C28E1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27D1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift */; };
-		3B26C28F1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27D1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift */; };
-		3B26C2901BFD2F170026F0A6 /* NSDate-FieldExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27D1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift */; };
-		3B26C2911BFD2F170026F0A6 /* NSDate-FieldExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27D1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift */; };
-		3B26C2921BFD2F170026F0A6 /* NSDate-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27E1BFD2F170026F0A6 /* NSDate-Formatting.swift */; };
-		3B26C2931BFD2F170026F0A6 /* NSDate-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27E1BFD2F170026F0A6 /* NSDate-Formatting.swift */; };
-		3B26C2941BFD2F170026F0A6 /* NSDate-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27E1BFD2F170026F0A6 /* NSDate-Formatting.swift */; };
-		3B26C2951BFD2F170026F0A6 /* NSDate-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27E1BFD2F170026F0A6 /* NSDate-Formatting.swift */; };
-		3B26C2961BFD2F170026F0A6 /* NSDate-Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27F1BFD2F170026F0A6 /* NSDate-Manipulation.swift */; };
-		3B26C2971BFD2F170026F0A6 /* NSDate-Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27F1BFD2F170026F0A6 /* NSDate-Manipulation.swift */; };
-		3B26C2981BFD2F170026F0A6 /* NSDate-Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27F1BFD2F170026F0A6 /* NSDate-Manipulation.swift */; };
-		3B26C2991BFD2F170026F0A6 /* NSDate-Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C27F1BFD2F170026F0A6 /* NSDate-Manipulation.swift */; };
-		3B26C29A1BFD2F170026F0A6 /* NSTimeInterval-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2801BFD2F170026F0A6 /* NSTimeInterval-Components.swift */; };
-		3B26C29B1BFD2F170026F0A6 /* NSTimeInterval-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2801BFD2F170026F0A6 /* NSTimeInterval-Components.swift */; };
-		3B26C29C1BFD2F170026F0A6 /* NSTimeInterval-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2801BFD2F170026F0A6 /* NSTimeInterval-Components.swift */; };
-		3B26C29D1BFD2F170026F0A6 /* NSTimeInterval-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2801BFD2F170026F0A6 /* NSTimeInterval-Components.swift */; };
-		3B26C29E1BFD2F170026F0A6 /* NSTimeInterval-Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2811BFD2F170026F0A6 /* NSTimeInterval-Literals.swift */; };
-		3B26C29F1BFD2F170026F0A6 /* NSTimeInterval-Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2811BFD2F170026F0A6 /* NSTimeInterval-Literals.swift */; };
-		3B26C2A01BFD2F170026F0A6 /* NSTimeInterval-Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2811BFD2F170026F0A6 /* NSTimeInterval-Literals.swift */; };
-		3B26C2A11BFD2F170026F0A6 /* NSTimeInterval-Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26C2811BFD2F170026F0A6 /* NSTimeInterval-Literals.swift */; };
-		3B5579F51BAA870500DC617D /* CleanroomDateTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5579F41BAA870500DC617D /* CleanroomDateTimeTests.swift */; };
-		3B5579F61BAA870500DC617D /* CleanroomDateTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5579F41BAA870500DC617D /* CleanroomDateTimeTests.swift */; };
-		3B5579F71BAA870500DC617D /* CleanroomDateTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5579F41BAA870500DC617D /* CleanroomDateTimeTests.swift */; };
+		3B312F651C3DC91C005B9533 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5D1C3DC91C005B9533 /* DateFormat.swift */; };
+		3B312F661C3DC91C005B9533 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5D1C3DC91C005B9533 /* DateFormat.swift */; };
+		3B312F671C3DC91C005B9533 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5D1C3DC91C005B9533 /* DateFormat.swift */; };
+		3B312F681C3DC91C005B9533 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5D1C3DC91C005B9533 /* DateFormat.swift */; };
+		3B312F691C3DC91C005B9533 /* DateParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5E1C3DC91C005B9533 /* DateParsing.swift */; };
+		3B312F6A1C3DC91C005B9533 /* DateParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5E1C3DC91C005B9533 /* DateParsing.swift */; };
+		3B312F6B1C3DC91C005B9533 /* DateParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5E1C3DC91C005B9533 /* DateParsing.swift */; };
+		3B312F6C1C3DC91C005B9533 /* DateParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5E1C3DC91C005B9533 /* DateParsing.swift */; };
+		3B312F6D1C3DC91C005B9533 /* NSDate-BooleanChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5F1C3DC91C005B9533 /* NSDate-BooleanChecks.swift */; };
+		3B312F6E1C3DC91C005B9533 /* NSDate-BooleanChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5F1C3DC91C005B9533 /* NSDate-BooleanChecks.swift */; };
+		3B312F6F1C3DC91C005B9533 /* NSDate-BooleanChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5F1C3DC91C005B9533 /* NSDate-BooleanChecks.swift */; };
+		3B312F701C3DC91C005B9533 /* NSDate-BooleanChecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F5F1C3DC91C005B9533 /* NSDate-BooleanChecks.swift */; };
+		3B312F711C3DC91C005B9533 /* NSDate-FieldExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F601C3DC91C005B9533 /* NSDate-FieldExtraction.swift */; };
+		3B312F721C3DC91C005B9533 /* NSDate-FieldExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F601C3DC91C005B9533 /* NSDate-FieldExtraction.swift */; };
+		3B312F731C3DC91C005B9533 /* NSDate-FieldExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F601C3DC91C005B9533 /* NSDate-FieldExtraction.swift */; };
+		3B312F741C3DC91C005B9533 /* NSDate-FieldExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F601C3DC91C005B9533 /* NSDate-FieldExtraction.swift */; };
+		3B312F751C3DC91C005B9533 /* NSDate-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F611C3DC91C005B9533 /* NSDate-Formatting.swift */; };
+		3B312F761C3DC91C005B9533 /* NSDate-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F611C3DC91C005B9533 /* NSDate-Formatting.swift */; };
+		3B312F771C3DC91C005B9533 /* NSDate-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F611C3DC91C005B9533 /* NSDate-Formatting.swift */; };
+		3B312F781C3DC91C005B9533 /* NSDate-Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F611C3DC91C005B9533 /* NSDate-Formatting.swift */; };
+		3B312F791C3DC91C005B9533 /* NSDate-Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F621C3DC91C005B9533 /* NSDate-Manipulation.swift */; };
+		3B312F7A1C3DC91C005B9533 /* NSDate-Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F621C3DC91C005B9533 /* NSDate-Manipulation.swift */; };
+		3B312F7B1C3DC91C005B9533 /* NSDate-Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F621C3DC91C005B9533 /* NSDate-Manipulation.swift */; };
+		3B312F7C1C3DC91C005B9533 /* NSDate-Manipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F621C3DC91C005B9533 /* NSDate-Manipulation.swift */; };
+		3B312F7D1C3DC91C005B9533 /* NSTimeInterval-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F631C3DC91C005B9533 /* NSTimeInterval-Components.swift */; };
+		3B312F7E1C3DC91C005B9533 /* NSTimeInterval-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F631C3DC91C005B9533 /* NSTimeInterval-Components.swift */; };
+		3B312F7F1C3DC91C005B9533 /* NSTimeInterval-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F631C3DC91C005B9533 /* NSTimeInterval-Components.swift */; };
+		3B312F801C3DC91C005B9533 /* NSTimeInterval-Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F631C3DC91C005B9533 /* NSTimeInterval-Components.swift */; };
+		3B312F811C3DC91C005B9533 /* NSTimeInterval-Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F641C3DC91C005B9533 /* NSTimeInterval-Literals.swift */; };
+		3B312F821C3DC91C005B9533 /* NSTimeInterval-Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F641C3DC91C005B9533 /* NSTimeInterval-Literals.swift */; };
+		3B312F831C3DC91C005B9533 /* NSTimeInterval-Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F641C3DC91C005B9533 /* NSTimeInterval-Literals.swift */; };
+		3B312F841C3DC91C005B9533 /* NSTimeInterval-Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F641C3DC91C005B9533 /* NSTimeInterval-Literals.swift */; };
+		3B312F861C3DC931005B9533 /* CleanroomDateTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F851C3DC931005B9533 /* CleanroomDateTimeTests.swift */; };
+		3B312F871C3DC931005B9533 /* CleanroomDateTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F851C3DC931005B9533 /* CleanroomDateTimeTests.swift */; };
+		3B312F881C3DC931005B9533 /* CleanroomDateTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B312F851C3DC931005B9533 /* CleanroomDateTimeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,14 +80,15 @@
 		3B00E5851BA379830011486D /* CleanroomDateTimeUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomDateTimeUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E59A1BA37A420011486D /* CleanroomDateTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomDateTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B00E5A31BA37A420011486D /* CleanroomDateTimeUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanroomDateTimeUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B26C27A1BFD2F170026F0A6 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
-		3B26C27B1BFD2F170026F0A6 /* DateParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateParsing.swift; sourceTree = "<group>"; };
-		3B26C27C1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-BooleanChecks.swift"; sourceTree = "<group>"; };
-		3B26C27D1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-FieldExtraction.swift"; sourceTree = "<group>"; };
-		3B26C27E1BFD2F170026F0A6 /* NSDate-Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Formatting.swift"; sourceTree = "<group>"; };
-		3B26C27F1BFD2F170026F0A6 /* NSDate-Manipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Manipulation.swift"; sourceTree = "<group>"; };
-		3B26C2801BFD2F170026F0A6 /* NSTimeInterval-Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval-Components.swift"; sourceTree = "<group>"; };
-		3B26C2811BFD2F170026F0A6 /* NSTimeInterval-Literals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval-Literals.swift"; sourceTree = "<group>"; };
+		3B312F5D1C3DC91C005B9533 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		3B312F5E1C3DC91C005B9533 /* DateParsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateParsing.swift; sourceTree = "<group>"; };
+		3B312F5F1C3DC91C005B9533 /* NSDate-BooleanChecks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-BooleanChecks.swift"; sourceTree = "<group>"; };
+		3B312F601C3DC91C005B9533 /* NSDate-FieldExtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-FieldExtraction.swift"; sourceTree = "<group>"; };
+		3B312F611C3DC91C005B9533 /* NSDate-Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Formatting.swift"; sourceTree = "<group>"; };
+		3B312F621C3DC91C005B9533 /* NSDate-Manipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Manipulation.swift"; sourceTree = "<group>"; };
+		3B312F631C3DC91C005B9533 /* NSTimeInterval-Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval-Components.swift"; sourceTree = "<group>"; };
+		3B312F641C3DC91C005B9533 /* NSTimeInterval-Literals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimeInterval-Literals.swift"; sourceTree = "<group>"; };
+		3B312F851C3DC931005B9533 /* CleanroomDateTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanroomDateTimeTests.swift; sourceTree = "<group>"; };
 		3B38DBD01BA76428000986DF /* Debug-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-iOS.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD11BA76428000986DF /* Debug-OSX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-OSX.xcconfig"; sourceTree = "<group>"; };
 		3B38DBD21BA76428000986DF /* Debug-tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug-tvOS.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +109,6 @@
 		3B38DBE11BA76428000986DF /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		3B38DBE21BA76428000986DF /* tvOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = tvOS.xcconfig; sourceTree = "<group>"; };
 		3B38DBE31BA76428000986DF /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
-		3B5579F41BAA870500DC617D /* CleanroomDateTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanroomDateTimeTests.swift; sourceTree = "<group>"; };
 		3B78C6CE1BA7634E00173EAC /* CleanroomDateTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomDateTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -205,6 +205,29 @@
 			path = config;
 			sourceTree = "<group>";
 		};
+		3B00E4D21BA36B840011486D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3B312F5D1C3DC91C005B9533 /* DateFormat.swift */,
+				3B312F5E1C3DC91C005B9533 /* DateParsing.swift */,
+				3B312F5F1C3DC91C005B9533 /* NSDate-BooleanChecks.swift */,
+				3B312F601C3DC91C005B9533 /* NSDate-FieldExtraction.swift */,
+				3B312F611C3DC91C005B9533 /* NSDate-Formatting.swift */,
+				3B312F621C3DC91C005B9533 /* NSDate-Manipulation.swift */,
+				3B312F631C3DC91C005B9533 /* NSTimeInterval-Components.swift */,
+				3B312F641C3DC91C005B9533 /* NSTimeInterval-Literals.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3B00E4D51BA36B840011486D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3B312F851C3DC931005B9533 /* CleanroomDateTimeTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		3B00E55E1BA3782D0011486D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,34 +242,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B5579DE1BAA86F800DC617D /* Code */ = {
-			isa = PBXGroup;
-			children = (
-				3B26C27A1BFD2F170026F0A6 /* DateFormat.swift */,
-				3B26C27B1BFD2F170026F0A6 /* DateParsing.swift */,
-				3B26C27C1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift */,
-				3B26C27D1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift */,
-				3B26C27E1BFD2F170026F0A6 /* NSDate-Formatting.swift */,
-				3B26C27F1BFD2F170026F0A6 /* NSDate-Manipulation.swift */,
-				3B26C2801BFD2F170026F0A6 /* NSTimeInterval-Components.swift */,
-				3B26C2811BFD2F170026F0A6 /* NSTimeInterval-Literals.swift */,
-			);
-			path = Code;
-			sourceTree = "<group>";
-		};
-		3B5579F31BAA870500DC617D /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3B5579F41BAA870500DC617D /* CleanroomDateTimeTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		3BCBACE11BA369AD007F1C90 = {
 			isa = PBXGroup;
 			children = (
-				3B5579DE1BAA86F800DC617D /* Code */,
-				3B5579F31BAA870500DC617D /* Tests */,
+				3B00E4D21BA36B840011486D /* Sources */,
+				3B00E4D51BA36B840011486D /* Tests */,
 				3B00E4B91BA36B840011486D /* BuildControl */,
 				3B00E55E1BA3782D0011486D /* Products */,
 			);
@@ -418,6 +418,7 @@
 		3BCBACE21BA369AD007F1C90 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				TargetAttributes = {
 					3B00E55C1BA3782D0011486D = {
@@ -523,14 +524,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B26C28E1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift in Sources */,
-				3B26C28A1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift in Sources */,
-				3B26C29E1BFD2F170026F0A6 /* NSTimeInterval-Literals.swift in Sources */,
-				3B26C2861BFD2F170026F0A6 /* DateParsing.swift in Sources */,
-				3B26C2921BFD2F170026F0A6 /* NSDate-Formatting.swift in Sources */,
-				3B26C29A1BFD2F170026F0A6 /* NSTimeInterval-Components.swift in Sources */,
-				3B26C2821BFD2F170026F0A6 /* DateFormat.swift in Sources */,
-				3B26C2961BFD2F170026F0A6 /* NSDate-Manipulation.swift in Sources */,
+				3B312F711C3DC91C005B9533 /* NSDate-FieldExtraction.swift in Sources */,
+				3B312F6D1C3DC91C005B9533 /* NSDate-BooleanChecks.swift in Sources */,
+				3B312F811C3DC91C005B9533 /* NSTimeInterval-Literals.swift in Sources */,
+				3B312F691C3DC91C005B9533 /* DateParsing.swift in Sources */,
+				3B312F751C3DC91C005B9533 /* NSDate-Formatting.swift in Sources */,
+				3B312F7D1C3DC91C005B9533 /* NSTimeInterval-Components.swift in Sources */,
+				3B312F651C3DC91C005B9533 /* DateFormat.swift in Sources */,
+				3B312F791C3DC91C005B9533 /* NSDate-Manipulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,7 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5579F51BAA870500DC617D /* CleanroomDateTimeTests.swift in Sources */,
+				3B312F861C3DC931005B9533 /* CleanroomDateTimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,14 +547,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B26C28F1BFD2F170026F0A6 /* NSDate-FieldExtraction.swift in Sources */,
-				3B26C28B1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift in Sources */,
-				3B26C29F1BFD2F170026F0A6 /* NSTimeInterval-Literals.swift in Sources */,
-				3B26C2871BFD2F170026F0A6 /* DateParsing.swift in Sources */,
-				3B26C2931BFD2F170026F0A6 /* NSDate-Formatting.swift in Sources */,
-				3B26C29B1BFD2F170026F0A6 /* NSTimeInterval-Components.swift in Sources */,
-				3B26C2831BFD2F170026F0A6 /* DateFormat.swift in Sources */,
-				3B26C2971BFD2F170026F0A6 /* NSDate-Manipulation.swift in Sources */,
+				3B312F721C3DC91C005B9533 /* NSDate-FieldExtraction.swift in Sources */,
+				3B312F6E1C3DC91C005B9533 /* NSDate-BooleanChecks.swift in Sources */,
+				3B312F821C3DC91C005B9533 /* NSTimeInterval-Literals.swift in Sources */,
+				3B312F6A1C3DC91C005B9533 /* DateParsing.swift in Sources */,
+				3B312F761C3DC91C005B9533 /* NSDate-Formatting.swift in Sources */,
+				3B312F7E1C3DC91C005B9533 /* NSTimeInterval-Components.swift in Sources */,
+				3B312F661C3DC91C005B9533 /* DateFormat.swift in Sources */,
+				3B312F7A1C3DC91C005B9533 /* NSDate-Manipulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5579F61BAA870500DC617D /* CleanroomDateTimeTests.swift in Sources */,
+				3B312F871C3DC931005B9533 /* CleanroomDateTimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,14 +570,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B26C2901BFD2F170026F0A6 /* NSDate-FieldExtraction.swift in Sources */,
-				3B26C28C1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift in Sources */,
-				3B26C2A01BFD2F170026F0A6 /* NSTimeInterval-Literals.swift in Sources */,
-				3B26C2881BFD2F170026F0A6 /* DateParsing.swift in Sources */,
-				3B26C2941BFD2F170026F0A6 /* NSDate-Formatting.swift in Sources */,
-				3B26C29C1BFD2F170026F0A6 /* NSTimeInterval-Components.swift in Sources */,
-				3B26C2841BFD2F170026F0A6 /* DateFormat.swift in Sources */,
-				3B26C2981BFD2F170026F0A6 /* NSDate-Manipulation.swift in Sources */,
+				3B312F731C3DC91C005B9533 /* NSDate-FieldExtraction.swift in Sources */,
+				3B312F6F1C3DC91C005B9533 /* NSDate-BooleanChecks.swift in Sources */,
+				3B312F831C3DC91C005B9533 /* NSTimeInterval-Literals.swift in Sources */,
+				3B312F6B1C3DC91C005B9533 /* DateParsing.swift in Sources */,
+				3B312F771C3DC91C005B9533 /* NSDate-Formatting.swift in Sources */,
+				3B312F7F1C3DC91C005B9533 /* NSTimeInterval-Components.swift in Sources */,
+				3B312F671C3DC91C005B9533 /* DateFormat.swift in Sources */,
+				3B312F7B1C3DC91C005B9533 /* NSDate-Manipulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,7 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5579F71BAA870500DC617D /* CleanroomDateTimeTests.swift in Sources */,
+				3B312F881C3DC931005B9533 /* CleanroomDateTimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,14 +593,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B26C2911BFD2F170026F0A6 /* NSDate-FieldExtraction.swift in Sources */,
-				3B26C28D1BFD2F170026F0A6 /* NSDate-BooleanChecks.swift in Sources */,
-				3B26C2A11BFD2F170026F0A6 /* NSTimeInterval-Literals.swift in Sources */,
-				3B26C2891BFD2F170026F0A6 /* DateParsing.swift in Sources */,
-				3B26C2951BFD2F170026F0A6 /* NSDate-Formatting.swift in Sources */,
-				3B26C29D1BFD2F170026F0A6 /* NSTimeInterval-Components.swift in Sources */,
-				3B26C2851BFD2F170026F0A6 /* DateFormat.swift in Sources */,
-				3B26C2991BFD2F170026F0A6 /* NSDate-Manipulation.swift in Sources */,
+				3B312F741C3DC91C005B9533 /* NSDate-FieldExtraction.swift in Sources */,
+				3B312F701C3DC91C005B9533 /* NSDate-BooleanChecks.swift in Sources */,
+				3B312F841C3DC91C005B9533 /* NSTimeInterval-Literals.swift in Sources */,
+				3B312F6C1C3DC91C005B9533 /* DateParsing.swift in Sources */,
+				3B312F781C3DC91C005B9533 /* NSDate-Formatting.swift in Sources */,
+				3B312F801C3DC91C005B9533 /* NSTimeInterval-Components.swift in Sources */,
+				3B312F681C3DC91C005B9533 /* DateFormat.swift in Sources */,
+				3B312F7C1C3DC91C005B9533 /* NSDate-Manipulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,7 +990,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1039,7 +1040,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1239,7 +1240,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 7;
 			};
 			name = Debug;
 		};
@@ -1247,7 +1247,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B38DBD81BA76428000986DF /* Project.xcconfig */;
 			buildSettings = {
-				CURRENT_PROJECT_VERSION = 7;
 			};
 			name = Release;
 		};
