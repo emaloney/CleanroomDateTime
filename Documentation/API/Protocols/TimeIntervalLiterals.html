@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TimeIntervalLiterals Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/TimeIntervalLiterals" class="dashAnchor"></a>
+    <a title="TimeIntervalLiterals Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CleanroomDateTime Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/emaloney/CleanroomDateTime"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CleanroomDateTime Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        TimeIntervalLiterals Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DateFormat.html">DateFormat</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/FloatLiteralType.html">FloatLiteralType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/IntegerLiteralType.html">IntegerLiteralType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSDate.html">NSDate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TimeIntervalLiterals.html">TimeIntervalLiterals</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TimeIntervalLiterals</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TimeIntervalLiterals</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>TimeIntervalLiterals</code> protocol is used to extend <code><a href="../Extensions/IntegerLiteralType.html">IntegerLiteralType</a></code>
+and <code><a href="../Extensions/FloatLiteralType.html">FloatLiteralType</a></code> to allow for human-readable time notations such as:</p>
+
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">sixtySeconds</span> <span class="o">=</span> <span class="mi">60</span><span class="o">.</span><span class="n">seconds</span>
+<span class="k">let</span> <span class="nv">twoAndAHalfMinutes</span> <span class="o">=</span> <span class="mf">2.5</span><span class="o">.</span><span class="n">minutes</span>
+<span class="k">let</span> <span class="nv">oneWeek</span> <span class="o">=</span> <span class="mi">7</span><span class="o">.</span><span class="n">days</span>
+<span class="k">let</span> <span class="nv">anotherWeek</span> <span class="o">=</span> <span class="mi">1</span><span class="o">.</span><span class="n">week</span>
+</code></pre>
+
+<p>Default implementations of the <code>minutes</code>, <code>hours</code>, <code>days</code>, and <code>weeks</code> 
+properties are supplied; implementors of the <code>TimeIntervalLiterals</code>
+protocol only need to supply an implementation for <code>seconds</code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP17CleanroomDateTime20TimeIntervalLiterals7secondsSd"></a>
+                    <a name="//apple_ref/swift/Property/seconds" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP17CleanroomDateTime20TimeIntervalLiterals7secondsSd">seconds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an <code>NSTimeInterval</code> representing the given number of
+ seconds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">seconds</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP17CleanroomDateTime20TimeIntervalLiterals7minutesSd"></a>
+                    <a name="//apple_ref/swift/Property/minutes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP17CleanroomDateTime20TimeIntervalLiterals7minutesSd">minutes</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an <code>NSTimeInterval</code> representing the given number of
+ minutes.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>The default implementation of <code>minutes</code> returns <code>seconds * 60</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">minutes</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP17CleanroomDateTime20TimeIntervalLiterals5hoursSd"></a>
+                    <a name="//apple_ref/swift/Property/hours" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP17CleanroomDateTime20TimeIntervalLiterals5hoursSd">hours</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an <code>NSTimeInterval</code> representing the given number of
+ hours.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>The default implementation of <code>hours</code> returns <code>minutes * 60</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">hours</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP17CleanroomDateTime20TimeIntervalLiterals4daysSd"></a>
+                    <a name="//apple_ref/swift/Property/days" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP17CleanroomDateTime20TimeIntervalLiterals4daysSd">days</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an <code>NSTimeInterval</code> representing the given number of
+ days.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>The default implementation of <code>days</code> returns <code>hours * 24</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">days</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP17CleanroomDateTime20TimeIntervalLiterals5weeksSd"></a>
+                    <a name="//apple_ref/swift/Property/weeks" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP17CleanroomDateTime20TimeIntervalLiterals5weeksSd">weeks</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an <code>NSTimeInterval</code> representing the given number of
+ weeks.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>The default implementation of <code>weeks</code> returns <code>days * 7</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">weeks</span><span class="p">:</span> <span class="kt">NSTimeInterval</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals6secondSd"></a>
+                    <a name="//apple_ref/swift/Property/second" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals6secondSd">second</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An alias for <code><a href="../Protocols/TimeIntervalLiterals.html#/s:vP17CleanroomDateTime20TimeIntervalLiterals7secondsSd">seconds</a></code> designed for correct grammar where single
+ units are used, eg. <code>1.second</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">second</span><span class="p">:</span> <span class="kt">NSTimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals6minuteSd"></a>
+                    <a name="//apple_ref/swift/Property/minute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals6minuteSd">minute</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An alias for <code><a href="../Protocols/TimeIntervalLiterals.html#/s:vP17CleanroomDateTime20TimeIntervalLiterals7minutesSd">minutes</a></code> designed for correct grammar where single
+ units are used, eg. <code>1.minute</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minute</span><span class="p">:</span> <span class="kt">NSTimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals4hourSd"></a>
+                    <a name="//apple_ref/swift/Property/hour" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals4hourSd">hour</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An alias for <code><a href="../Protocols/TimeIntervalLiterals.html#/s:vP17CleanroomDateTime20TimeIntervalLiterals5hoursSd">hours</a></code> designed for correct grammar where single
+ units are used, eg. <code>1.hour</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hour</span><span class="p">:</span> <span class="kt">NSTimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals3daySd"></a>
+                    <a name="//apple_ref/swift/Property/day" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals3daySd">day</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An alias for <code><a href="../Protocols/TimeIntervalLiterals.html#/s:vP17CleanroomDateTime20TimeIntervalLiterals4daysSd">days</a></code> designed for correct grammar where single
+ units are used, eg. <code>1.day</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">day</span><span class="p">:</span> <span class="kt">NSTimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals4weekSd"></a>
+                    <a name="//apple_ref/swift/Property/week" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vE17CleanroomDateTimePS_20TimeIntervalLiterals4weekSd">week</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An alias for <code><a href="../Protocols/TimeIntervalLiterals.html#/s:vP17CleanroomDateTime20TimeIntervalLiterals5weeksSd">weeks</a></code> designed for correct grammar where single
+ units are used, eg. <code>1.week</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">week</span><span class="p">:</span> <span class="kt">NSTimeInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2015-2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
