@@ -1,5 +1,5 @@
 //
-//  NSTimeInterval-Components.swift
+//  TimeIntervalComponents.swift
 //  Cleanroom Project
 //
 //  Created by Evan Maloney on 10/28/15.
@@ -9,10 +9,10 @@
 import Foundation
 
 /**
- Adds properties to `NSDate` for accessing various representations of the
+ Adds properties to `Date` for accessing various representations of the
  amount of time until the date represented by the receiver.
  */
-public extension NSDate
+public extension Date
 {
     /**
      The number of whole 7-day periods until the date represented by the
@@ -56,10 +56,10 @@ public extension NSDate
 }
 
 /**
- Adds properties to `NSDate` for accessing various representations of the
+ Adds properties to `Date` for accessing various representations of the
  amount of time since the date represented by the receiver.
  */
-public extension NSDate
+public extension Date
 {
     /**
      The number of whole 7-day periods since the date represented by the

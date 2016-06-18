@@ -1,5 +1,5 @@
 //
-//  NSDate-Formatting.swift
+//  DateFormatting.swift
 //  Cleanroom Project
 //
 //  Created by Evan Maloney on 8/14/15.
@@ -8,123 +8,123 @@
 
 import Foundation
 
-extension NSDate
+extension Date
 {
     /**
      Formats the receiver as a date string using the specified
-     `NSDateFormatterStyle`.
+     `DateFormatter.Style`.
 
-     - parameter style: The `NSDateFormatterStyle` that specifies the format 
+     - parameter style: The `DateFormatter.Style` that specifies the format 
      of the string to be returned.
 
-     - parameter timeZone: The `NSTimeZone` associated with the date being
+     - parameter timeZone: The `TimeZone` associated with the date being
      formatted. If `nil`, the time zone will not be taken into account.
 
      - returns: The string representation of the receiver's date.
      */
-    public func formatDateWithStyle(style: NSDateFormatterStyle, timeZone: NSTimeZone? = nil)
+    public func formatDate(style: DateFormatter.Style, timeZone: TimeZone? = nil)
         -> String
     {
-        let fmt = NSDateFormatter()
+        let fmt = DateFormatter()
         if let tz = timeZone {
             fmt.timeZone = tz
         }
         fmt.dateStyle = style
-        fmt.timeStyle = .NoStyle
-        return fmt.stringFromDate(self)
+        fmt.timeStyle = .noStyle
+        return fmt.string(from: self)
     }
 
     /**
      Formats the receiver as a time string using the specified
-     `NSDateFormatterStyle`.
+     `DateFormatter.Style`.
 
-     - parameter style: The `NSDateFormatterStyle` that specifies the format
+     - parameter style: The `DateFormatter.Style` that specifies the format
      of the string to be returned.
 
-     - parameter timeZone: The `NSTimeZone` associated with the time being
+     - parameter timeZone: The `TimeZone` associated with the time being
      formatted. If `nil`, the time zone will not be taken into account.
 
      - returns: The string representation of the receiver's time.
      */
-    public func formatTimeWithStyle(style: NSDateFormatterStyle, timeZone: NSTimeZone? = nil)
+    public func formatTime(style: DateFormatter.Style, timeZone: TimeZone? = nil)
         -> String
     {
-        let fmt = NSDateFormatter()
+        let fmt = DateFormatter()
         if let tz = timeZone {
             fmt.timeZone = tz
         }
-        fmt.dateStyle = .NoStyle
+        fmt.dateStyle = .noStyle
         fmt.timeStyle = style
-        return fmt.stringFromDate(self)
+        return fmt.string(from: self)
     }
 
     /**
      Formats the receiver as a date/time string using the specified
-     `NSDateFormatterStyle`.
+     `DateFormatter.Style`.
 
-     - parameter style: The `NSDateFormatterStyle` that specifies the format
+     - parameter style: The `DateFormatter.Style` that specifies the format
      of the string to be returned.
 
-     - parameter timeZone: The `NSTimeZone` associated with the date and time
+     - parameter timeZone: The `TimeZone` associated with the date and time
      being formatted. If `nil`, the time zone will not be taken into account.
 
      - returns: The string representation of the receiver's date and time.
      */
-    public func formatDateTimeWithStyle(style: NSDateFormatterStyle, timeZone: NSTimeZone? = nil)
+    public func formatDateTime(style: DateFormatter.Style, timeZone: TimeZone? = nil)
         -> String
     {
-        let fmt = NSDateFormatter()
+        let fmt = DateFormatter()
         if let tz = timeZone {
             fmt.timeZone = tz
         }
         fmt.dateStyle = style
         fmt.timeStyle = style
-        return fmt.stringFromDate(self)
+        return fmt.string(from: self)
     }
 
     /**
      Formats the receiver as a date string in the UTC time zone using the
-     specified `NSDateFormatterStyle`.
+     specified `DateFormatter.Style`.
 
-     - parameter style: The `NSDateFormatterStyle` that specifies the format
+     - parameter style: The `DateFormatter.Style` that specifies the format
      of the string to be returned.
 
      - returns: The string representation of the receiver's date.
      */
-    public func formatUTCDateWithStyle(style: NSDateFormatterStyle)
+    public func formatUTCDate(style: DateFormatter.Style)
         -> String
     {
-        return formatDateWithStyle(style, timeZone: NSTimeZone(abbreviation: "UTC")!)
+        return formatDate(style: style, timeZone: TimeZone(abbreviation: "UTC")!)
     }
 
     /**
      Formats the receiver as a time string in the UTC time zone using the
-     specified `NSDateFormatterStyle`.
+     specified `DateFormatter.Style`.
 
-     - parameter style: The `NSDateFormatterStyle` that specifies the format
+     - parameter style: The `DateFormatter.Style` that specifies the format
      of the string to be returned.
 
      - returns: The string representation of the receiver's time.
      */
-    public func formatUTCTimeWithStyle(style: NSDateFormatterStyle)
+    public func formatUTCTime(style: DateFormatter.Style)
         -> String
     {
-        return formatTimeWithStyle(style, timeZone: NSTimeZone(abbreviation: "UTC")!)
+        return formatTime(style: style, timeZone: TimeZone(abbreviation: "UTC")!)
     }
 
     /**
      Formats the receiver as a date/time string in the UTC time zone using the
-     specified `NSDateFormatterStyle`.
+     specified `DateFormatter.Style`.
 
-     - parameter style: The `NSDateFormatterStyle` that specifies the format
+     - parameter style: The `DateFormatter.Style` that specifies the format
      of the string to be returned.
 
      - returns: The string representation of the receiver's date and time.
      */
-    public func formatUTCDateTimeWithStyle(style: NSDateFormatterStyle)
+    public func formatUTCDateTime(style: DateFormatter.Style)
         -> String
     {
-        return formatDateTimeWithStyle(style, timeZone: NSTimeZone(abbreviation: "UTC")!)
+        return formatDateTime(style: style, timeZone: TimeZone(abbreviation: "UTC")!)
     }
 
     /**
@@ -134,19 +134,19 @@ extension NSDate
      - parameter format: A `DateFormat` value specifying the format of the
      string to be returned.
 
-     - parameter timeZone: The `NSTimeZone` associated with the date being
+     - parameter timeZone: The `TimeZone` associated with the date being
      formatted.
 
      - returns: The string representation of the receiver's date and time.
      */
-    public func asStringWithDateFormat(format: DateFormat, inTimeZone timeZone: NSTimeZone)
+    public func asString(format: StandardDateFormat, inTimeZone timeZone: TimeZone)
         -> String
     {
-        let formatter = NSDateFormatter()
-        formatter.locale = NSLocale(localeIdentifier: NSLocale.currentLocale().localeIdentifier)
+        let formatter = DateFormatter()
+        formatter.locale = Locale(localeIdentifier: Locale.current().localeIdentifier)
         formatter.timeZone = timeZone
         formatter.dateFormat = format.rawValue
-        return formatter.stringFromDate(self)
+        return formatter.string(from: self)
     }
 
     /**
@@ -161,16 +161,16 @@ extension NSDate
 
      - returns: The string representation of the receiver's date and time.
      */
-    public func asStringWithDateFormat(format: DateFormat, inLocalTime: Bool = false)
+    public func asString(format: StandardDateFormat, inLocalTime: Bool = false)
         -> String
     {
-        let timeZone: NSTimeZone
+        let timeZone: TimeZone
         if inLocalTime {
-            timeZone = NSTimeZone.localTimeZone()
+            timeZone = TimeZone.local()
         } else {
-            timeZone = NSTimeZone(forSecondsFromGMT: 0)
+            timeZone = TimeZone(forSecondsFromGMT: 0)
         }
-        return asStringWithDateFormat(format, inTimeZone: timeZone)
+        return asString(format: format, inTimeZone: timeZone)
     }
 
     /**
@@ -185,7 +185,7 @@ extension NSDate
     public func asRFC1123(inLocalTime: Bool = false)
         -> String
     {
-        return asStringWithDateFormat(.RFC1123, inLocalTime: inLocalTime)
+        return asString(format: .rfc1123, inLocalTime: inLocalTime)
     }
 
     /**
@@ -200,6 +200,6 @@ extension NSDate
     public func asISO8601(inLocalTime: Bool = false)
       -> String
     {
-        return asStringWithDateFormat(.ISO8601, inLocalTime: inLocalTime)
+        return asString(format: .iso8601, inLocalTime: inLocalTime)
     }
 }
