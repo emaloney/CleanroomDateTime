@@ -30,7 +30,7 @@ extension Date
             fmt.timeZone = tz
         }
         fmt.dateStyle = style
-        fmt.timeStyle = .noStyle
+        fmt.timeStyle = .none
         return fmt.string(from: self)
     }
 
@@ -53,7 +53,7 @@ extension Date
         if let tz = timeZone {
             fmt.timeZone = tz
         }
-        fmt.dateStyle = .noStyle
+        fmt.dateStyle = .none
         fmt.timeStyle = style
         return fmt.string(from: self)
     }
@@ -139,11 +139,11 @@ extension Date
 
      - returns: The string representation of the receiver's date and time.
      */
-    public func asString(format: StandardDateFormat, inTimeZone timeZone: TimeZone)
+    public func asString(format: StandardDateFormat, timeZone: TimeZone)
         -> String
     {
         let formatter = DateFormatter()
-        formatter.locale = Locale(localeIdentifier: Locale.current().localeIdentifier)
+        formatter.locale = Locale(localeIdentifier: Locale.current.localeIdentifier)
         formatter.timeZone = timeZone
         formatter.dateFormat = format.rawValue
         return formatter.string(from: self)
@@ -166,11 +166,11 @@ extension Date
     {
         let timeZone: TimeZone
         if inLocalTime {
-            timeZone = TimeZone.local()
+            timeZone = TimeZone.local
         } else {
             timeZone = TimeZone(forSecondsFromGMT: 0)
         }
-        return asString(format: format, inTimeZone: timeZone)
+        return asString(format: format, timeZone: timeZone)
     }
 
     /**

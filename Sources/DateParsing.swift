@@ -41,7 +41,7 @@ extension String
         -> Date?
     {
         let formatter = DateFormatter()
-        formatter.locale = Locale(localeIdentifier: Locale.current().localeIdentifier)
+        formatter.locale = Locale(localeIdentifier: Locale.current.localeIdentifier)
         formatter.timeZone = TimeZone(forSecondsFromGMT: 0)
         formatter.dateFormat = StandardDateFormat.iso8601.rawValue
         return formatter.date(from: self)

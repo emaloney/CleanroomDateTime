@@ -17,14 +17,14 @@ public extension Date
      The `year` component of the date represented by the receiver. 
      */
     public var year: Int {
-        return Calendar.current().components(.year, from: self).year!
+        return Calendar.current.components(.year, from: self).year!
     }
 
     /**
      The `month` component of the date represented by the receiver.
      */
     public var month: Int {
-        return Calendar.current().components(.month, from: self).month!
+        return Calendar.current.components(.month, from: self).month!
     }
 
     /**
@@ -32,35 +32,35 @@ public extension Date
      receiver.
      */
     public var day: Int {
-        return Calendar.current().components(.day, from: self).day!
+        return Calendar.current.components(.day, from: self).day!
     }
 
     /** 
      The `hour` component of the date represented by the receiver.
      */
     public var hour: Int {
-        return Calendar.current().components(.hour, from: self).hour!
+        return Calendar.current.components(.hour, from: self).hour!
     }
 
     /** 
      The `minute` component of the date represented by the receiver.
      */
     public var minute: Int {
-        return Calendar.current().components(.minute, from: self).minute!
+        return Calendar.current.components(.minute, from: self).minute!
     }
 
     /** 
      The `second` component of the date represented by the receiver.
      */
     public var second: Int {
-        return Calendar.current().components(.second, from: self).second!
+        return Calendar.current.components(.second, from: self).second!
     }
 
     /** 
      The `nanosecond` component of the date represented by the receiver.
      */
     public var nanosecond: Int {
-        return Calendar.current().components(.nanosecond, from: self).nanosecond!
+        return Calendar.current.components(.nanosecond, from: self).nanosecond!
     }
 
     /**
@@ -69,7 +69,7 @@ public extension Date
      represents Sunday, while *n* is 7, representing Saturday.
      */
     public var weekday: Int {
-        return Calendar.current().components(.weekday, from: self).weekday!
+        return Calendar.current.components(.weekday, from: self).weekday!
     }
 
     /** 
@@ -79,21 +79,21 @@ public extension Date
      for a `weekday` of 4 represents "the third Wednesday in the month." 
      */
     public var weekdayOrdinal: Int {
-        return Calendar.current().components(.weekdayOrdinal, from: self).weekdayOrdinal!
+        return Calendar.current.components(.weekdayOrdinal, from: self).weekdayOrdinal!
     }
 
     /** 
      The `weekOfMonth` component of the date represented by the receiver. 
      */
     public var weekOfMonth: Int {
-        return Calendar.current().components(.weekOfMonth, from: self).weekOfMonth!
+        return Calendar.current.components(.weekOfMonth, from: self).weekOfMonth!
     }
 
     /** 
      The `weekOfYear` component of the date represented by the receiver.
      */
     public var weekOfYear: Int {
-        return Calendar.current().components(.weekOfYear, from: self).weekOfYear!
+        return Calendar.current.components(.weekOfYear, from: self).weekOfYear!
     }
 
     /** 
@@ -101,6 +101,6 @@ public extension Date
      if it could not be determined.
      */
     public var timeZone: TimeZone? {
-        return Calendar.current().components(.timeZone, from: self).timeZone
+        return Calendar.current.components(.timeZone, from: self).timeZone
     }
 }
