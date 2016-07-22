@@ -21,9 +21,9 @@ The [`master`](https://github.com/emaloney/CleanroomDateTime) branch of this pro
 
 Branch|Build status
 --------|------------------------
-`master`|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomDateTime)
-`swift2.3`|[![Build status: swift2.3 branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=swift2.3)](https://travis-ci.org/emaloney/CleanroomDateTime)
-`swift3`|[![Build status: swift3 branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=swift3)](https://travis-ci.org/emaloney/CleanroomDateTime)
+[`master`](https://github.com/emaloney/CleanroomDateTime)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomDateTime)
+[`swift2.3`](https://github.com/emaloney/CleanroomDateTime/tree/swift2.3)|[![Build status: swift2.3 branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=swift2.3)](https://travis-ci.org/emaloney/CleanroomDateTime)
+[`swift3`](https://github.com/emaloney/CleanroomDateTime/tree/swift3)|[![Build status: swift3 branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=swift3)](https://travis-ci.org/emaloney/CleanroomDateTime)
 
 
 ### License
