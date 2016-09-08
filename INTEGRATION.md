@@ -1,4 +1,4 @@
-![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/master/Assets/gilt-tech-logo.png)
+![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/swift3/Assets/gilt-tech-logo.png)
 
 # CleanroomDateTime Integration Notes
 
@@ -15,7 +15,7 @@ Macintosh|macOS 10.12|macOS 10.10
 Apple TV|tvOS 10.0|tvOS 9.0
 Apple Watch|watchOS 3.0|watchOS 2.0
 
-**This is the `swift3` branch of CleanroomDateTime.** It uses **Swift 3.0** and **requires Xcode 8.0 beta 6** (or higher) to compile.
+**This is the `swift3` branch of CleanroomDateTime.** It uses **Swift 3.0** and **requires Xcode 8** to compile.
 
 ### Contents
 
@@ -27,7 +27,7 @@ Apple Watch|watchOS 3.0|watchOS 2.0
 
 Some familiarity with the Terminal application, the bash command line, and the `git` command is assumed.
 
-The steps below have been tested with **git 2.7.4 (Apple Git-66)**, although they should be compatible with a wide range of recent git versions.
+The steps below have been tested with **git 2.7.4 (Apple Git-73)**, although they should be compatible with a wide range of recent git versions.
 
 
 ### Of Frameworks and Simulators
@@ -287,6 +287,6 @@ Once CleanroomDateTime has been successfully integrated, all you will need to do
 import CleanroomDateTime
 ```
 
-Want to learn more about CleanroomDateTime? Check out [the README](https://github.com/emaloney/CleanroomDateTime/blob/master/README.md).
+Want to learn more about CleanroomDateTime? Check out [the README](https://github.com/emaloney/CleanroomDateTime/blob/swift3/README.md).
 
 **_Happy coding!_**
