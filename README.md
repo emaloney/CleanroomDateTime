@@ -28,7 +28,7 @@ Branch|Build status
 
 ### License
 
-CleanroomDateTime is distributed under [the MIT license](/blob/master/LICENSE).
+CleanroomDateTime is distributed under [the MIT license](https://github.com/emaloney/CleanroomDateTime/blob/master/LICENSE).
 
 CleanroomDateTime is provided for your use—free-of-charge—on an as-is basis. We make no guarantees, promises or apologies. *Caveat developer.*
 
