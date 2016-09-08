@@ -643,9 +643,9 @@ or is equal to one of the times.</p>
 <p><strong>Note:</strong> The order of the <code>time1</code> and <code>time2</code> arguments is not significant;
 they may be swapped without changing the return value of the function.</p>
 
-<p>:param:     time1 The first <code><a href="../Extensions/NSDate.html">NSDate</a></code> value.</p>
+<p>:param:     time1 The first <code>NSDate</code> value.</p>
 
-<p>:param:     time2 The second <code><a href="../Extensions/NSDate.html">NSDate</a></code> value.</p>
+<p>:param:     time2 The second <code>NSDate</code> value.</p>
 
 <p>:returns:   <code>true</code> if the receiver represents any time between <code>time1</code> and
             <code>time2</code> (inclusive); <code>false</code> otherwise.</p>
@@ -682,9 +682,9 @@ to one of the times.</p>
 <p><strong>Note:</strong> The order of the <code>time1</code> and <code>time2</code> arguments is not significant;
 they may be swapped without changing the return value of the function.</p>
 
-<p>:param:     time1 The first <code><a href="../Extensions/NSDate.html">NSDate</a></code> value.</p>
+<p>:param:     time1 The first <code>NSDate</code> value.</p>
 
-<p>:param:     time2 The second <code><a href="../Extensions/NSDate.html">NSDate</a></code> value.</p>
+<p>:param:     time2 The second <code>NSDate</code> value.</p>
 
 <p>:returns:   <code>true</code> if the current time is between <code>time1</code> and <code>time2</code>
             (inclusive); <code>false</code> otherwise.</p>
@@ -715,7 +715,7 @@ they may be swapped without changing the return value of the function.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Determines whether the specified <code><a href="../Extensions/NSDate.html">NSDate</a></code> represents the same day as the
+                        <p>Determines whether the specified <code>NSDate</code> represents the same day as the
 receiver.</p>
 
 <p>:param:     date The date to test.</p>
@@ -1124,7 +1124,7 @@ specified <code>NSDateFormatterStyle</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asStringWithDateFormat</span><span class="p">(</span><span class="nv">format</span><span class="p">:</span> <span class="kt">DateFormat</span><span class="p">,</span> <span class="n">inTimeZone</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">NSTimeZone</span><span class="p">)</span>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asStringWithDateFormat</span><span class="p">(</span><span class="nv">format</span><span class="p">:</span> <span class="kt"><a href="../Enums/DateFormat.html">DateFormat</a></span><span class="p">,</span> <span class="n">inTimeZone</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">NSTimeZone</span><span class="p">)</span>
         <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
@@ -1191,7 +1191,7 @@ specified <code>NSDateFormatterStyle</code>.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asStringWithDateFormat</span><span class="p">(</span><span class="nv">format</span><span class="p">:</span> <span class="kt">DateFormat</span><span class="p">,</span> <span class="nv">inLocalTime</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asStringWithDateFormat</span><span class="p">(</span><span class="nv">format</span><span class="p">:</span> <span class="kt"><a href="../Enums/DateFormat.html">DateFormat</a></span><span class="p">,</span> <span class="nv">inLocalTime</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span>
         <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
@@ -1650,7 +1650,7 @@ If the receiver is in the future, the value will be negative.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new <code><a href="../Extensions/NSDate.html">NSDate</a></code> set to the same day as the receiver but with a time
+                        <p>Returns a new <code>NSDate</code> set to the same day as the receiver but with a time
 value specified by the given hour, minute, second and nanosecond components.</p>
 
 <p>:param:     hour The hour component of the time.</p>
@@ -1661,7 +1661,7 @@ value specified by the given hour, minute, second and nanosecond components.</p>
 
 <p>:param:     nanosecond The nanosecond component of the time.</p>
 
-<p>:returns:   The new <code><a href="../Extensions/NSDate.html">NSDate</a></code> instance.</p>
+<p>:returns:   The new <code>NSDate</code> instance.</p>
 
                       </div>
                       <div class="declaration">
@@ -1689,7 +1689,7 @@ value specified by the given hour, minute, second and nanosecond components.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new <code><a href="../Extensions/NSDate.html">NSDate</a></code> representing the 24-hour time <code>00:00:00</code> on the
+                        <p>Returns a new <code>NSDate</code> representing the 24-hour time <code>00:00:00</code> on the
 same day as the receiver.</p>
 
                       </div>
@@ -1717,7 +1717,7 @@ same day as the receiver.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new <code><a href="../Extensions/NSDate.html">NSDate</a></code> representing the 24-hour time <code>23:59:59.999999999</code>
+                        <p>Returns a new <code>NSDate</code> representing the 24-hour time <code>23:59:59.999999999</code>
 on the same day as the receiver.</p>
 
                       </div>
@@ -1745,7 +1745,7 @@ on the same day as the receiver.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new <code><a href="../Extensions/NSDate.html">NSDate</a></code> representing the current time, but with yesterday&rsquo;s
+                        <p>Returns a new <code>NSDate</code> representing the current time, but with yesterday&rsquo;s
 date.</p>
 
                       </div>
@@ -1773,7 +1773,7 @@ date.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new <code><a href="../Extensions/NSDate.html">NSDate</a></code> representing the current time, but with tomorrow&rsquo;s
+                        <p>Returns a new <code>NSDate</code> representing the current time, but with tomorrow&rsquo;s
 date.</p>
 
                       </div>
@@ -1801,13 +1801,13 @@ date.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new <code><a href="../Extensions/NSDate.html">NSDate</a></code> containing the same time as the receiver, but with
+                        <p>Returns a new <code>NSDate</code> containing the same time as the receiver, but with
 the date adjusted earlier or later by the given number of days.</p>
 
 <p>:param:     days The number of days to add to (if positive) or subtract 
             from (if negative) the receiver.</p>
 
-<p>:returns:   The new <code><a href="../Extensions/NSDate.html">NSDate</a></code> instance.</p>
+<p>:returns:   The new <code>NSDate</code> instance.</p>
 
                       </div>
                       <div class="declaration">
@@ -1835,10 +1835,10 @@ the date adjusted earlier or later by the given number of days.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new <code><a href="../Extensions/NSDate.html">NSDate</a></code> containing the same time as the receiver, but one
+                        <p>Returns a new <code>NSDate</code> containing the same time as the receiver, but one
 day earlier.</p>
 
-<p>:returns:   The new <code><a href="../Extensions/NSDate.html">NSDate</a></code> instance.</p>
+<p>:returns:   The new <code>NSDate</code> instance.</p>
 
                       </div>
                       <div class="declaration">
@@ -1865,10 +1865,10 @@ day earlier.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a new <code><a href="../Extensions/NSDate.html">NSDate</a></code> containing the same time as the receiver, but one
+                        <p>Returns a new <code>NSDate</code> containing the same time as the receiver, but one
 day later.</p>
 
-<p>:returns:   The new <code><a href="../Extensions/NSDate.html">NSDate</a></code> instance.</p>
+<p>:returns:   The new <code>NSDate</code> instance.</p>
 
                       </div>
                       <div class="declaration">
@@ -1888,7 +1888,7 @@ day later.</p>
         </section>
         <section id="footer">
           <p>© 2015-2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
