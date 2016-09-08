@@ -32,7 +32,7 @@ public extension Date
         -> Date
     {
         let calendar = Calendar.current
-        var dayStart = calendar.components([.day, .month, .year, .timeZone], from: self)
+        var dayStart = calendar.dateComponents([.day, .month, .year, .timeZone], from: self)
         dayStart.hour = hour
         dayStart.minute = minute
         dayStart.second = second
@@ -85,7 +85,7 @@ public extension Date
     public func adjustDay(_ days: Int)
         -> Date
     {
-        return Calendar.current.date(byAdding: .day, value: days, to: self, options: .wrapComponents)!
+        return Calendar.current.date(byAdding: .day, value: days, to: self, wrappingComponents: true)!
     }
 
     /**

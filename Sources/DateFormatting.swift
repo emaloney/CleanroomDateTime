@@ -143,7 +143,7 @@ extension Date
         -> String
     {
         let formatter = DateFormatter()
-        formatter.locale = Locale(localeIdentifier: Locale.current.localeIdentifier)
+        formatter.locale = Locale(identifier: Locale.current.identifier)
         formatter.timeZone = timeZone
         formatter.dateFormat = format.rawValue
         return formatter.string(from: self)
@@ -166,9 +166,9 @@ extension Date
     {
         let timeZone: TimeZone
         if inLocalTime {
-            timeZone = TimeZone.local
+            timeZone = TimeZone.current
         } else {
-            timeZone = TimeZone(forSecondsFromGMT: 0)
+            timeZone = TimeZone(secondsFromGMT: 0)!
         }
         return asString(format: format, timeZone: timeZone)
     }
