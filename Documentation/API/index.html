@@ -31,7 +31,7 @@
             <a href="Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Enums/DateFormat.html">DateFormat</a>
+                <a href="Enums/StandardDateFormat.html">StandardDateFormat</a>
               </li>
             </ul>
           </li>
@@ -39,13 +39,13 @@
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Extensions/FloatLiteralType.html">FloatLiteralType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/IntegerLiteralType.html">IntegerLiteralType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Extensions/NSDate.html">NSDate</a>
               </li>
               <li class="nav-group-task">
                 <a href="Extensions/String.html">String</a>
@@ -66,16 +66,86 @@
         <section>
           <section class="section">
             
-            <a href='#cleanroomdatetime' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='cleanroomdatetime'>CleanroomDateTime</h1>
-<a href='#authors' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='authors'>Authors</h3>
+            <p><img src="https://raw.githubusercontent.com/gilt/Cleanroom/swift3/Assets/gilt-tech-logo.png" alt="Gilt Tech logo"></p>
+<a href='#cleanroomdatetime' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='cleanroomdatetime'>CleanroomDateTime</h1>
 
-<p>Evan Maloney, Gilt Groupe</p>
+<p>CleanroomDateTime is a Swift framework providing utilities for handling dates and times.</p>
+
+<p>CleanroomDateTime is part of <a href="https://github.com/gilt/Cleanroom">the Cleanroom Project</a> from <a href="http://tech.gilt.com">Gilt Tech</a>.</p>
+<a href='#swift-compatibility' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='swift-compatibility'>Swift compatibility</h3>
+
+<p><strong>Important:</strong> This is the <code>swift3</code> branch. It uses <strong>Swift 3.0</strong> and <strong>requires Xcode 8</strong> to compile.</p>
+
+<p>This branch is still under active development. Expect breaking changes to the API, the build system and/or the project structure at any time. <strong>Be sure to lock against a specific commit if you simultaneously require Swift 3 and stability.</strong></p>
+
+<p>If you need Swift 2.3 compatibility, use the <a href="https://github.com/emaloney/CleanroomDateTime"><code>master</code></a> branch, which requires Xcode 8.</p>
+<a href='#current-status' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='current-status'>Current status</h4>
+
+<table><thead>
+<tr>
+<th>Branch</th>
+<th>Build status</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/emaloney/CleanroomDateTime"><code>master</code></a></td>
+<td><a href="https://travis-ci.org/emaloney/CleanroomDateTime"><img src="https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=master" alt="Build status: master branch"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/emaloney/CleanroomDateTime/tree/swift3"><code>swift3</code></a></td>
+<td><a href="https://travis-ci.org/emaloney/CleanroomDateTime"><img src="https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=swift3" alt="Build status: swift3 branch"></a></td>
+</tr>
+</tbody></table>
+<a href='#license' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='license'>License</h3>
+
+<p>CleanroomDateTime is distributed under <a href="https://github.com/emaloney/CleanroomDateTime/blob/swift3/LICENSE">the MIT license</a>.</p>
+
+<p>CleanroomDateTime is provided for your use—free-of-charge—on an as-is basis. We make no guarantees, promises or apologies. <em>Caveat developer.</em></p>
+<a href='#adding-cleanroomdatetime-to-your-project' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='adding-cleanroomdatetime-to-your-project'>Adding CleanroomDateTime to your project</h3>
+
+<p><a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a></p>
+
+<p>The simplest way to integrate CleanroomDateTime is with the <a href="https://github.com/Carthage/Carthage">Carthage</a> dependency manager.</p>
+
+<p>First, add this line to your <a href="https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile"><code>Cartfile</code></a>:</p>
+<pre class="highlight plaintext"><code>github "emaloney/CleanroomDateTime" ~&gt; 0.0.0
+</code></pre>
+
+<p>Then, use the <code>carthage</code> command to <a href="https://github.com/Carthage/Carthage#upgrading-frameworks">update your dependencies</a>.</p>
+
+<p>Finally, you’ll need to <a href="https://github.com/emaloney/CleanroomDateTime/blob/swift3/INTEGRATION.md">integrate CleanroomDateTime into your project</a> in order to use <a href="https://rawgit.com/emaloney/CleanroomDateTime/swift3/Documentation/API/index.html">the API</a> it provides.</p>
+
+<p>Once successfully integrated, just add the following <code>import</code> statement to any Swift file where you want to use CleanroomDateTime:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">CleanroomDateTime</span>
+</code></pre>
+
+<p>See <a href="https://github.com/emaloney/CleanroomDateTime/blob/swift3/INTEGRATION.md">the Integration document</a> for additional details on integrating CleanroomDateTime into your project.</p>
+<a href='#api-documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='api-documentation'>API documentation</h3>
+
+<p>For detailed information on using CleanroomDateTime, <a href="https://rawgit.com/emaloney/CleanroomDateTime/swift3/Documentation/API/index.html">API documentation</a> is available.</p>
+<a href='#about' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='about'>About</h2>
+
+<p>The Cleanroom Project began as an experiment to re-imagine Gilt’s iOS codebase in a legacy-free, Swift-based incarnation.</p>
+
+<p>Since then, we’ve expanded the Cleanroom Project to include multi-platform support. Much of our codebase now supports tvOS in addition to iOS, and our lower-level code is usable on macOS and watchOS as well.</p>
+
+<p>Cleanroom Project code serves as the foundation of Gilt on TV, our tvOS app <a href="http://www.apple.com/apple-events/september-2015/">featured by Apple during the launch of the new Apple TV</a>. And as time goes on, we&rsquo;ll be replacing more and more of our existing Objective-C codebase with Cleanroom implementations.</p>
+
+<p>In the meantime, we’ll be tracking the latest releases of Swift &amp; Xcode, and <a href="https://github.com/gilt/Cleanroom#open-source-by-default">open-sourcing major portions of our codebase</a> along the way.</p>
+<a href='#contributing' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='contributing'>Contributing</h3>
+
+<p>CleanroomDateTime is in active development, and we welcome your contributions.</p>
+
+<p>If you’d like to contribute to this or any other Cleanroom Project repo, please read <a href="https://github.com/gilt/Cleanroom#contributing-to-the-cleanroom-project">the contribution guidelines</a>.</p>
+<a href='#acknowledgements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='acknowledgements'>Acknowledgements</h3>
+
+<p><a href="https://rawgit.com/emaloney/CleanroomDateTime/swift3/Documentation/API/index.html">API documentation for CleanroomDateTime</a> is generated using <a href="http://realm.io">Realm</a>’s <a href="https://github.com/realm/jazzy/">jazzy</a> project, maintained by <a href="https://github.com/jpsim">JP Simard</a> and <a href="https://github.com/segiddins">Samuel E. Giddins</a>.</p>
 
           </section>
         </section>
         <section id="footer">
           <p>© 2015-2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

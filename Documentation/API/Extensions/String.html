@@ -32,7 +32,7 @@
             <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/DateFormat.html">DateFormat</a>
+                <a href="../Enums/StandardDateFormat.html">StandardDateFormat</a>
               </li>
             </ul>
           </li>
@@ -40,13 +40,13 @@
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/FloatLiteralType.html">FloatLiteralType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/IntegerLiteralType.html">IntegerLiteralType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/NSDate.html">NSDate</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
@@ -81,9 +81,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE17CleanroomDateTimeSS13asDateRFC1123FT_GSqCSo6NSDate_"></a>
+                    <a name="/s:FE17CleanroomDateTimeSS13asDateRFC1123FT_GSqV10Foundation4Date_"></a>
                     <a name="//apple_ref/swift/Method/asDateRFC1123()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE17CleanroomDateTimeSS13asDateRFC1123FT_GSqCSo6NSDate_">asDateRFC1123()</a>
+                    <a class="token" href="#/s:FE17CleanroomDateTimeSS13asDateRFC1123FT_GSqV10Foundation4Date_">asDateRFC1123()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -91,7 +91,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Extends <code><a href="../Extensions/String.html">String</a></code> to provide a function for parsing the receiver
+                        <p>Extends <code>String</code> to provide a function for parsing the receiver
 as an <a href="https://www.ietf.org/rfc/rfc1123.txt">RFC 1123</a> date.</p>
 
                       </div>
@@ -100,13 +100,13 @@ as an <a href="https://www.ietf.org/rfc/rfc1123.txt">RFC 1123</a> date.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asDateRFC1123</span><span class="p">()</span>
-        <span class="o">-&gt;</span> <span class="kt">NSDate</span><span class="p">?</span></code></pre>
+        <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>An <code><a href="../Extensions/NSDate.html">NSDate</a></code> parsed from the receiver, or <code>nil</code> if the receiver did not contain a date string in the expected format.</p>
+                        <p>A <code>Date</code> parsed from the receiver, or <code>nil</code> if the receiver did not contain a date string in the expected format.</p>
 
                       </div>
                     </section>
@@ -115,9 +115,9 @@ as an <a href="https://www.ietf.org/rfc/rfc1123.txt">RFC 1123</a> date.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FE17CleanroomDateTimeSS13asDateISO8601FT_GSqCSo6NSDate_"></a>
+                    <a name="/s:FE17CleanroomDateTimeSS13asDateISO8601FT_GSqV10Foundation4Date_"></a>
                     <a name="//apple_ref/swift/Method/asDateISO8601()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FE17CleanroomDateTimeSS13asDateISO8601FT_GSqCSo6NSDate_">asDateISO8601()</a>
+                    <a class="token" href="#/s:FE17CleanroomDateTimeSS13asDateISO8601FT_GSqV10Foundation4Date_">asDateISO8601()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -125,7 +125,7 @@ as an <a href="https://www.ietf.org/rfc/rfc1123.txt">RFC 1123</a> date.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Extends <code><a href="../Extensions/String.html">String</a></code> to provide a function for parsing the receiver
+                        <p>Extends <code>String</code> to provide a function for parsing the receiver
 as an <a href="http://www.w3.org/TR/NOTE-datetime">ISO 8601</a> date.</p>
 
                       </div>
@@ -134,13 +134,13 @@ as an <a href="http://www.w3.org/TR/NOTE-datetime">ISO 8601</a> date.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asDateISO8601</span><span class="p">()</span>
-        <span class="o">-&gt;</span> <span class="kt">NSDate</span><span class="p">?</span></code></pre>
+        <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>An <code><a href="../Extensions/NSDate.html">NSDate</a></code> parsed from the receiver, or <code>nil</code> if the receiver did not contain a date string in the expected format.</p>
+                        <p>A <code>Date</code> parsed from the receiver, or <code>nil</code> if the receiver did not contain a date string in the expected format.</p>
 
                       </div>
                     </section>
@@ -152,7 +152,7 @@ as an <a href="http://www.w3.org/TR/NOTE-datetime">ISO 8601</a> date.</p>
         </section>
         <section id="footer">
           <p>© 2015-2016 <a class="link" href="http://tech.gilt.com/" target="_blank" rel="external">Gilt Groupe</a></p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
