@@ -1,4 +1,4 @@
-![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/swift3/Assets/gilt-tech-logo.png)
+![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/master/Assets/gilt-tech-logo.png)
 
 # CleanroomDateTime Integration Notes
 
@@ -13,7 +13,7 @@ Macintosh|macOS 10.12|macOS 10.10
 Apple TV|tvOS 10.0|tvOS 9.0
 Apple Watch|watchOS 3.0|watchOS 2.0
 
-**This is the `swift3` branch of CleanroomDateTime.** It uses **Swift 3.0** and **requires Xcode 8** to compile.
+CleanroomDateTime uses **Swift 3.0** and **requires Xcode 8** to compile.
 
 ### Options for integration
 
@@ -36,12 +36,12 @@ Within to your project’s root directory, Carthage-based projects will store a 
 To integrate CleanroomDateTime in your workspace, you would start by adding the following line to the `Cartfile`:
 
 ```
-github "emaloney/CleanroomDateTime" ~> 0.0.0
+github "emaloney/CleanroomDateTime" ~> 1.0.0
 ```
 
-This specifies that Carthage use the latest version of CleanroomDateTime that is API-compatible with 0.0, i.e. any 0.0.*x* version.
+This specifies that Carthage use the latest version of CleanroomDateTime that is API-compatible with 1.0, i.e. any 1.0.*x* version.
 
-**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomDateTime/releases); there may be a newer version than 0.0 that is no longer API-compatible.
+**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomDateTime/releases); there may be a newer version than 1.0 that is no longer API-compatible.
 
 ### 2. Download CleanroomDateTime using Carthage
 
@@ -106,7 +106,7 @@ Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to
 
 ### You're done!
 
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomDateTime/swift3/Documentation/API/index.html) provided by CleanroomDateTime using the statement:
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html) provided by CleanroomDateTime using the statement:
 
 ```swift
 import CleanroomDateTime
@@ -161,7 +161,7 @@ Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to
 
 ### You're done!
 
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomDateTime/swift3/Documentation/API/index.html) provided by CleanroomDateTime using the statement:
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html) provided by CleanroomDateTime using the statement:
 
 ```swift
 import CleanroomDateTime
@@ -169,6 +169,6 @@ import CleanroomDateTime
 
 ## Further Reading
 
-Want to learn more about CleanroomDateTime? Check out [the README](https://github.com/emaloney/CleanroomDateTime/blob/swift3/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomDateTime/swift3/Documentation/API/index.html).
+Want to learn more about CleanroomDateTime? Check out [the README](https://github.com/emaloney/CleanroomDateTime/blob/master/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html).
 
 **_Happy coding!_**
