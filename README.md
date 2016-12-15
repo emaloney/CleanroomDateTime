@@ -1,4 +1,4 @@
-![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/master/Assets/gilt-tech-logo.png)
+![Gilt Tech logo](https://raw.githubusercontent.com/gilt/Cleanroom/xcode-8.1/Assets/gilt-tech-logo.png)
 
 # CleanroomDateTime
 
@@ -9,7 +9,12 @@ CleanroomDateTime is part of [the Cleanroom Project](https://github.com/gilt/Cle
 
 ### Swift compatibility
 
-This is the `master` branch. It uses **Swift 3.0** and **requires Xcode 8** to compile.
+**Important:** This is the `xcode-8.1` branch. It uses **Swift 3.0.1** and **requires Xcode 8.1** to compile.
+
+2 other branches are also available:
+
+- The [`master`](https://github.com/emaloney/CleanroomDateTime) branch uses **Swift 3.0**, requiring Xcode 8.0
+- The [`xcode-8.2`](https://github.com/emaloney/CleanroomDateTime/tree/xcode-8.2) branch uses **Swift 3.0.2**, requiring Xcode 8.2
 
 
 #### Current status
@@ -17,11 +22,12 @@ This is the `master` branch. It uses **Swift 3.0** and **requires Xcode 8** to c
 Branch|Build status
 --------|------------------------
 [`master`](https://github.com/emaloney/CleanroomDateTime)|[![Build status: master branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=master)](https://travis-ci.org/emaloney/CleanroomDateTime)
-
+[`xcode-8.1`](https://github.com/emaloney/CleanroomDateTime/tree/xcode-8.1)|[![Build status: xcode-8.1 branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=xcode-8.1)](https://travis-ci.org/emaloney/CleanroomDateTime)
+[`xcode-8.2`](https://github.com/emaloney/CleanroomDateTime/tree/xcode-8.2)|[![Build status: xcode-8.2 branch](https://travis-ci.org/emaloney/CleanroomDateTime.svg?branch=xcode-8.2)](https://travis-ci.org/emaloney/CleanroomDateTime)
 
 ### License
 
-CleanroomDateTime is distributed under [the MIT license](https://github.com/emaloney/CleanroomDateTime/blob/master/LICENSE).
+CleanroomDateTime is distributed under [the MIT license](https://github.com/emaloney/CleanroomDateTime/blob/xcode-8.1/LICENSE).
 
 CleanroomDateTime is provided for your use—free-of-charge—on an as-is basis. We make no guarantees, promises or apologies. *Caveat developer.*
 
@@ -40,7 +46,7 @@ github "emaloney/CleanroomDateTime" ~> 1.0.0
 
 Then, use the `carthage` command to [update your dependencies](https://github.com/Carthage/Carthage#upgrading-frameworks).
 
-Finally, you’ll need to [integrate CleanroomDateTime into your project](https://github.com/emaloney/CleanroomDateTime/blob/master/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html) it provides.
+Finally, you’ll need to [integrate CleanroomDateTime into your project](https://github.com/emaloney/CleanroomDateTime/blob/xcode-8.1/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/CleanroomDateTime/xcode-8.1/Documentation/API/index.html) it provides.
 
 Once successfully integrated, just add the following `import` statement to any Swift file where you want to use CleanroomDateTime:
 
@@ -48,12 +54,12 @@ Once successfully integrated, just add the following `import` statement to any S
 import CleanroomDateTime
 ```
 
-See [the Integration document](https://github.com/emaloney/CleanroomDateTime/blob/master/INTEGRATION.md) for additional details on integrating CleanroomDateTime into your project.
+See [the Integration document](https://github.com/emaloney/CleanroomDateTime/blob/xcode-8.1/INTEGRATION.md) for additional details on integrating CleanroomDateTime into your project.
 
 
 ### API documentation
 
-For detailed information on using CleanroomDateTime, [API documentation](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html) is available.
+For detailed information on using CleanroomDateTime, [API documentation](https://rawgit.com/emaloney/CleanroomDateTime/xcode-8.1/Documentation/API/index.html) is available.
 
 
 ## About
@@ -76,5 +82,5 @@ If you’d like to contribute to this or any other Cleanroom Project repo, pleas
 
 ### Acknowledgements
 
-[API documentation for CleanroomDateTime](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html) is generated using [Realm](http://realm.io)’s [jazzy](https://github.com/realm/jazzy/) project, maintained by [JP Simard](https://github.com/jpsim) and [Samuel E. Giddins](https://github.com/segiddins).
+[API documentation for CleanroomDateTime](https://rawgit.com/emaloney/CleanroomDateTime/xcode-8.1/Documentation/API/index.html) is generated using [Realm](http://realm.io)’s [jazzy](https://github.com/realm/jazzy/) project, maintained by [JP Simard](https://github.com/jpsim) and [Samuel E. Giddins](https://github.com/segiddins).
 
