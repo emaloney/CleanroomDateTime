@@ -43,14 +43,13 @@ Then, use the `carthage` command to [update your dependencies](https://github.co
 
 Finally, you’ll need to [integrate CleanroomDateTime into your project](https://github.com/emaloney/CleanroomDateTime/blob/master/INTEGRATION.md) in order to use [the API](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html) it provides.
 
-Once successfully integrated, just add the following `import` statement to any Swift file where you want to use CleanroomDateTime:
+Once successfully integrated, just add the following statement to any Swift file where you want to use CleanroomDateTime:
 
 ```swift
 import CleanroomDateTime
 ```
 
 See [the Integration document](https://github.com/emaloney/CleanroomDateTime/blob/master/INTEGRATION.md) for additional details on integrating CleanroomDateTime into your project.
-
 
 ### API documentation
 
@@ -77,5 +76,4 @@ If you’d like to contribute to this or any other Cleanroom Project repo, pleas
 
 ### Acknowledgements
 
-[API documentation for CleanroomDateTime](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html) is generated using [Realm](http://realm.io)’s [jazzy](https://github.com/realm/jazzy/) project, maintained by [JP Simard](https://github.com/jpsim) and [Samuel E. Giddins](https://github.com/segiddins).
-
+API documentation is generated using [Realm](http://realm.io)’s [jazzy](https://github.com/realm/jazzy/) project, maintained by [JP Simard](https://github.com/jpsim) and [Samuel E. Giddins](https://github.com/segiddins).
