@@ -47,9 +47,9 @@ To integrate CleanroomDateTime in your workspace, you would start by adding the 
 github "emaloney/CleanroomDateTime" ~> 1.3.0
 ```
 
-This specifies that Carthage use the latest version of CleanroomDateTime that is API-compatible with 1.3, i.e. any 1.3.*x* version.
+This specifies that Carthage use the latest version of CleanroomDateTime that is API-compatible with 1.3.0, i.e. any 1.3.*x* version.
 
-**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomDateTime/releases); there may be a newer version than 1.3 that is no longer API-compatible.
+**Note:** Be sure to check the [latest releases](https://github.com/emaloney/CleanroomDateTime/releases); there may be a newer version than 1.3.0 that is no longer API-compatible.
 
 ### 2. Download CleanroomDateTime using Carthage
 

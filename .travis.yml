@@ -35,4 +35,3 @@ after_failure:
   - test -f "CleanroomDateTime-tvOS-test.log" && tail -n 2500 "CleanroomDateTime-tvOS-test.log"
   - test -f "CleanroomDateTime-tvOS-test.log" && LINE_BEFORE=`cat "CleanroomDateTime-tvOS-test.log" | grep -n "IDETestOperationsObserverDebug. Writing diagnostic log for test session to." | awk -F':' '{print $1}'` && LINE=`expr $LINE_BEFORE + 1` && LOG_FILE=`head -n $LINE "CleanroomDateTime-tvOS-test.log" | tail -n 1` && cat "$LOG_FILE"
   - test -f "CleanroomDateTime-watchOS-build.log" && tail -n 2500 "CleanroomDateTime-watchOS-build.log"
-
