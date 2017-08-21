@@ -9,12 +9,12 @@ CleanroomDateTime is designed as a *universal Swift framework* with support for 
 
 Platform|Latest supported OS|Oldest supported OS
 --------|-------------------|-------------------
-iPhone/iPad|iOS 10.3|iOS 9.0
-Macintosh|macOS 10.12|macOS 10.11
-Apple TV|tvOS 10.2|tvOS 9.0
-Apple Watch|watchOS 3.2|watchOS 2.0
+iPhone/iPad|iOS 11.0|iOS 9.0
+Macintosh|macOS 10.13|macOS 10.11
+Apple TV|tvOS 11.0|tvOS 9.0
+Apple Watch|watchOS 4.0|watchOS 2.0
 
-CleanroomDateTime uses **Swift 3.1** and **requires Xcode 8.3** to compile.
+**This is the `swift-4` branch of CleanroomDateTime.** It uses **Swift 4.0** and **requires Xcode 9.0 beta** to compile.
 
 ### Options for integration
 
@@ -24,7 +24,7 @@ There are two supported options for integration:
 
 - **[Manual integration](#manual-integration)** involves embedding the `CleanroomDateTime.xcodeproj` file within your project’s Xcode workspace.
 
-Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html) provided by CleanroomDateTime in any Swift file using the statement:
+Once properly integrated, you can make use of [the API](https://rawgit.com/emaloney/CleanroomDateTime/swift-4/Documentation/API/index.html) provided by CleanroomDateTime in any Swift file using the statement:
 
 ```swift
 import CleanroomDateTime
@@ -33,7 +33,7 @@ import CleanroomDateTime
 
 ## Carthage Integration
 
-Carthage is a third-party package dependency manager for Apple platforms. As of this writing, the current supported version of Carthage is 0.18.1.
+Carthage is a third-party package dependency manager for Apple platforms. As of this writing, the current supported version of Carthage is 0.24.0.
 
 Installing and using Carthage is beyond the scope of this document. If you do not have Carthage installed but would like to use it, [you can find installation instructions on the project page](https://github.com/Carthage/Carthage#installing-carthage). 
 
@@ -163,6 +163,6 @@ Select the appropriate Build Scheme for your Target, and press `⌘-B` to try to
 
 ## Further Reading
 
-Want to learn more about CleanroomDateTime? Check out [the README](https://github.com/emaloney/CleanroomDateTime/blob/master/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomDateTime/master/Documentation/API/index.html).
+Want to learn more about CleanroomDateTime? Check out [the README](https://github.com/emaloney/CleanroomDateTime/blob/swift-4/README.md) or [the API documentation](https://rawgit.com/emaloney/CleanroomDateTime/swift-4/Documentation/API/index.html).
 
 **_Happy coding!_**
