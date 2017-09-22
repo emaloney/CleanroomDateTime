@@ -25,9 +25,7 @@ import Foundation
  */
 
 extension Date {
-    struct Formatter {
-
-        private static let ThreadDictionaryKeyPrefix = "CleanroomDateTimeFormatter-"
+    public struct Formatter {
 
         //MARK: Fixed-format dates
 
@@ -47,19 +45,19 @@ extension Date {
             return formatter
         }
 
-        static let iso8601Date: DateFormatter = {
+        public static let iso8601Date: DateFormatter = {
             return fixedDateFormatter(format: StandardDateFormat.iso8601Date.rawValue)
         }()
 
-        static let iso8601DateTime: DateFormatter = {
+        public static let iso8601DateTime: DateFormatter = {
             return fixedDateFormatter(format: StandardDateFormat.iso8601DateTime.rawValue)
         }()
 
-        static let iso8601DateTimeMillis: DateFormatter = {
+        public static let iso8601DateTimeMillis: DateFormatter = {
             return fixedDateFormatter(format: StandardDateFormat.iso8601DateTimeMillis.rawValue)
         }()
 
-        static let rfc1123: DateFormatter = {
+        public static let rfc1123: DateFormatter = {
             return fixedDateFormatter(format: StandardDateFormat.iso8601DateTimeMillis.rawValue)
         }()
 
