@@ -23,11 +23,7 @@ extension String
     public func asDateRFC1123()
         -> Date?
     {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
-        formatter.dateFormat = StandardDateFormat.rfc1123.rawValue
-        return formatter.date(from: self)
+        return Date.Formatter.rfc1123.date(from: self)
     }
 
     /**
@@ -40,10 +36,18 @@ extension String
     public func asDateISO8601()
         -> Date?
     {
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: Locale.current.identifier)
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
-        formatter.dateFormat = StandardDateFormat.iso8601.rawValue
-        return formatter.date(from: self)
+        /** Chain of parsers solves the issue when services use different
+         date formats with millisonds of even without time */
+
+        if let date = Date.Formatter.iso8601DateTimeMillis.date(from: self) {
+            return date
+        }
+        if let date = Date.Formatter.iso8601DateTime.date(from: self) {
+            return date
+        }
+        if let date = Date.Formatter.iso8601Date.date(from: self) {
+            return date
+        }
+        return nil
     }
 }
