@@ -60,17 +60,5 @@ extension Date {
         public static let rfc1123: DateFormatter = {
             return fixedDateFormatter(format: StandardDateFormat.iso8601DateTimeMillis.rawValue)
         }()
-
-        //MARK: User-visible dates
-
-        /**
-         If formatting date strings for the user interface, localize the strings
-         by avoiding using string literals dateFormat if possible. Use dateStyle
-         and timeStyle where you can. And if you must use custom dateFormat,
-         use templates to localize your strings. See Apple Technical Q&A #1480.
-         https://developer.apple.com/library/content/qa/qa1480/_index.html
-         */
-
-        //TODO: create a collection with reusable common formatters styles, probably in threadDictionary and store them with autoupdating current timezone and autoupdating current locale
     }
 }
