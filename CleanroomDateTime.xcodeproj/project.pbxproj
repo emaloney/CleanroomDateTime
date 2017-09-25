@@ -17,6 +17,7 @@
 		3B475CD91DB46F4F0047D397 /* TimeIntervalComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B475CD11DB46F4F0047D397 /* TimeIntervalComponents.swift */; };
 		3B475CDA1DB46F4F0047D397 /* TimeIntervalLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B475CD21DB46F4F0047D397 /* TimeIntervalLiterals.swift */; };
 		3B90590D1DAECB5200B4EEC0 /* CleanroomDateTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9059031DAECB5200B4EEC0 /* CleanroomDateTime.framework */; };
+		4B596E141F7539DF004CE9F0 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B596E131F7539DF004CE9F0 /* Formatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3B90592C1DAECD9800B4EEC0 /* Info-Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Tests.plist"; sourceTree = "<group>"; };
 		3BDB18211F15B30800803117 /* Info-Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Target.plist"; sourceTree = "<group>"; };
 		3BDB18221F15B32100803117 /* Target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Target.xcconfig; sourceTree = "<group>"; };
+		4B596E131F7539DF004CE9F0 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				3B475CCD1DB46F4F0047D397 /* DateFormatting.swift */,
 				3B475CCE1DB46F4F0047D397 /* DateManipulation.swift */,
 				3B475CCF1DB46F4F0047D397 /* DateParsing.swift */,
+				4B596E131F7539DF004CE9F0 /* Formatter.swift */,
 				3B475CD01DB46F4F0047D397 /* StandardDateFormat.swift */,
 				3B475CD11DB46F4F0047D397 /* TimeIntervalComponents.swift */,
 				3B475CD21DB46F4F0047D397 /* TimeIntervalLiterals.swift */,
@@ -249,6 +252,7 @@
 				3B475CD71DB46F4F0047D397 /* DateParsing.swift in Sources */,
 				3B475CDA1DB46F4F0047D397 /* TimeIntervalLiterals.swift in Sources */,
 				3B475CD91DB46F4F0047D397 /* TimeIntervalComponents.swift in Sources */,
+				4B596E141F7539DF004CE9F0 /* Formatter.swift in Sources */,
 				3B475CD61DB46F4F0047D397 /* DateManipulation.swift in Sources */,
 				3B475CD31DB46F4F0047D397 /* BooleanDateChecks.swift in Sources */,
 				3B475CD51DB46F4F0047D397 /* DateFormatting.swift in Sources */,

@@ -200,6 +200,6 @@ extension Date
     public func asISO8601(inLocalTime: Bool = false)
       -> String
     {
-        return asString(format: .iso8601, inLocalTime: inLocalTime)
+        return asString(format: .iso8601DateTime, inLocalTime: inLocalTime)
     }
 }
