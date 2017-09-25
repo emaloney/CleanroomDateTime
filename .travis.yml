@@ -13,7 +13,7 @@ git:
 
 before_install:
   - sudo systemsetup -settimezone America/New_York					# temporary hack: NYC timezone is required for some MBDataEnvironment date-related unit tests
-  - git submodule update --init
+  - travis_wait 30 git submodule update --init
 
 install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
