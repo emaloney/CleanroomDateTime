@@ -36,29 +36,29 @@ extension Date {
          Gregorian calendars. See Apple Technical Q&A #1480.
          https://developer.apple.com/library/content/qa/qa1480/_index.html
          */
-        private static func fixedDateFormatter(format: String) -> DateFormatter {
+        private static func fixedDateFormatter(format: StandardDateFormat) -> DateFormatter {
             let formatter = DateFormatter()
             formatter.calendar = Calendar(identifier: .iso8601)
             formatter.locale = Locale(identifier: "en_US_POSIX")
             formatter.timeZone = TimeZone(secondsFromGMT: 0)
-            formatter.dateFormat = format
+            formatter.dateFormat = format.rawValue
             return formatter
         }
 
         public static let iso8601Date: DateFormatter = {
-            return fixedDateFormatter(format: StandardDateFormat.iso8601Date.rawValue)
+            return fixedDateFormatter(format: .iso8601Date)
         }()
 
         public static let iso8601DateTime: DateFormatter = {
-            return fixedDateFormatter(format: StandardDateFormat.iso8601DateTime.rawValue)
+            return fixedDateFormatter(format: .iso8601DateTime)
         }()
 
         public static let iso8601DateTimeMillis: DateFormatter = {
-            return fixedDateFormatter(format: StandardDateFormat.iso8601DateTimeMillis.rawValue)
+            return fixedDateFormatter(format: .iso8601DateTimeMillis)
         }()
 
         public static let rfc1123: DateFormatter = {
-            return fixedDateFormatter(format: StandardDateFormat.iso8601DateTimeMillis.rawValue)
+            return fixedDateFormatter(format: .rfc1123)
         }()
     }
 }
