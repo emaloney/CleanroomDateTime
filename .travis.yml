@@ -21,13 +21,13 @@ install:
   - sudo killall -9 com.apple.CoreSimulator.CoreSimulatorService	# same simulator: https://github.com/travis-ci/travis-ci/issues/7580#issuecomment-292974395
 
 script:
-  - ./BuildControl/bin/travisBuildHelper.sh build iOS
-  - ./BuildControl/bin/travisBuildHelper.sh test iOS
-  - ./BuildControl/bin/travisBuildHelper.sh build macOS
-  - ./BuildControl/bin/travisBuildHelper.sh test macOS
-  - ./BuildControl/bin/travisBuildHelper.sh build tvOS
-  - ./BuildControl/bin/travisBuildHelper.sh test tvOS
-  - ./BuildControl/bin/travisBuildHelper.sh build watchOS
+  - travis_wait 30 ./BuildControl/bin/travisBuildHelper.sh build iOS
+  - travis_wait 30 ./BuildControl/bin/travisBuildHelper.sh test iOS
+  - travis_wait 30 ./BuildControl/bin/travisBuildHelper.sh build macOS
+  - travis_wait 30 ./BuildControl/bin/travisBuildHelper.sh test macOS
+  - travis_wait 30 ./BuildControl/bin/travisBuildHelper.sh build tvOS
+  - travis_wait 30 ./BuildControl/bin/travisBuildHelper.sh test tvOS
+  - travis_wait 30 ./BuildControl/bin/travisBuildHelper.sh build watchOS
 
 after_failure:
   - test -f "CleanroomDateTime-iOS-build.log" && tail -n 2500 "CleanroomDateTime-iOS-build.log"

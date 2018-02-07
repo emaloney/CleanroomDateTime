@@ -36,7 +36,7 @@ The simplest way to integrate CleanroomDateTime is with the [Carthage](https://g
 First, add this line to your [`Cartfile`](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
 
 ```
-github "emaloney/CleanroomDateTime" ~> 2.0.0
+github "emaloney/CleanroomDateTime" ~> 2.1.0
 ```
 
 Then, use the `carthage` command to [update your dependencies](https://github.com/Carthage/Carthage#upgrading-frameworks).
@@ -71,7 +71,7 @@ In the meantime, we’ll be tracking the latest releases of Swift & Xcode, and [
 
 CleanroomDateTime is in active development, and we welcome your contributions.
 
-If you’d like to contribute to this or any other Cleanroom Project repo, please read [the contribution guidelines](https://github.com/gilt/Cleanroom#contributing-to-the-cleanroom-project).
+If you’d like to contribute to this or any other Cleanroom Project repo, please read [the contribution guidelines](https://github.com/gilt/Cleanroom#contributing-to-the-cleanroom-project). If you have any questions, please reach out to project owner [Paul Lee](http://github.com/pauljlee).
 
 
 ### Acknowledgements
